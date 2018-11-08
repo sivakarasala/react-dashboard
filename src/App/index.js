@@ -5,6 +5,7 @@ import AppLayout from './AppLayout';
 import Settings from '../Settings';
 import AppBar from './AppBar';
 import {AppProvider} from './AppProvider';
+import Content from '../Shared/Content';
 
 
 
@@ -14,7 +15,9 @@ class App extends Component {
       <AppLayout>
         <AppProvider>
           <AppBar/>
-          <Settings/>
+          <Content>
+            <Settings/>
+          </Content>
         </AppProvider>
       </AppLayout>
     )
